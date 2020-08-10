@@ -124,8 +124,9 @@ tap = 0
 while a == 'bill' or a == 'BILL' or a == 'Bill':
   ta = int ( input ("ENTER THE TOTAL AMOUNT OF THE ITEM :"))
   gst = int (input ("ENTER THE GST ON THE ITEM :"))
-  tap = ta + ( (ta * gst) / 100)
-  print ("THE AMOUNT TO BE PAY AFTER THE GST IS",tap) 
   a = input("Enter 'BILL' IF more item to be calculate OR Else press any key :")
+  tap = tap + (ta + (ta * gst) / 100)
+  
 
-print ("THANKS   FOR   USING")   
+print ("THE AMOUNT TO BE PAY AFTER THE GST IS",tap)
+print ("THANKS   FOR   USING")  

@@ -82,3 +82,17 @@ print ("YOU ARE A RESPONSIBLE CITIZEN OF INDIAN")"""
 
 
 ########  WHILE LOOP PPROGRAM :::::::::::::::::::
+
+
+
+"""WAP TO CALCULATE THE PRODUCTS OF TWO INPUTTED INTEGERS WITHOUT USING * OPERATOR; INSTEAD USING REPEATED ADDITION?"""
+a = int ( input ("Enter first no :"))
+b = int ( input ( "Enter the second no :"))
+p = 0
+c = a
+
+while c > 0:
+    c = c - 1
+    p = p + b
+
+print ("Product Of Two No",a,"and",b,"is:",p )    

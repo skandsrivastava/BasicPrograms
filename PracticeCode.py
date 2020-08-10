@@ -128,6 +128,4 @@ while a == 'bill' or a == 'BILL' or a == 'Bill':
   print ("THE AMOUNT TO BE PAY AFTER THE GST IS",tap) 
   a = input("Enter 'BILL' IF more item to be calculate OR Else press any key :")
 
-print ("THANKS   FOR   USING")  
-
-  
+print ("THANKS   FOR   USING")   

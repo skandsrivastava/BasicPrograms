@@ -41,7 +41,7 @@ print ("YOU ARE A RESPONSIBLE CITIZEN OF INDIAN")"""
 
 #################################
 
-## FOR LOOP PROGRAM:::::::::::::
+""" FOR LOOP PROGRAM:::::::::::::"""
 
 #A = range (10)
 #print (A)
@@ -55,29 +55,29 @@ print ("YOU ARE A RESPONSIBLE CITIZEN OF INDIAN")"""
 
 
 
-#WAP to generate the table of a no ask by a user?
-"""Table = int ( input ("ENTER A NO WHICH TABLE YOU WANT :")) 
-for i in range (1,11) :
-  print(Table,"X",i,"=",Table*i)"""
+"""WAP to generate the table of a no ask by a user?"""
+#Table = int ( input ("ENTER A NO WHICH TABLE YOU WANT :")) 
+#for i in range (1,11) :
+ # print(Table,"X",i,"=",Table*i)
 
 
 
 
-#WAP to print cubes of number in a range?
-"""a = int ( input("ENTER THE FIRST NO OF THE RANGE FOR WHICH YOU WANT A CUBE OF A NUMBER: "))
-b = int ( input("ENTER THE SECOND NO OF THE RANGE FOR WHICH YOU WANT A CUBE OF A NUMBER: "))
-c = b + 1
-for i in range (a , c):
-  print ("CUBES OF A NUMBER'S",i,"is:",i**3)"""
+"""WAP to print cubes of number in a range?"""
+#a = int ( input("ENTER THE FIRST NO OF THE RANGE FOR WHICH YOU WANT A CUBE OF A NUMBER: "))
+#b = int ( input("ENTER THE SECOND NO OF THE RANGE FOR WHICH YOU WANT A CUBE OF A NUMBER: "))
+#c = b + 1
+#for i in range (a , c):
+ # print ("CUBES OF A NUMBER'S",i,"is:",i**3)
 
 
 
-#WAP to print a square ROOT of every alternate number in a range?
-"""a = int ( input("ENTER THE FIRST NO OF THE RANGE FOR WHICH YOU WANT A SQUARE ROOT OF AN ALTERNATE NUMBER: "))
-b = int ( input("ENTER THE SECOND NO OF THE RANGE FOR WHICH YOU WANT A SQUARE ROOT OF AN ALTERNATE NUMBER: "))
-c = b + 1 
-for i in range (a , c , 2):
-  print ("SQUARE OF",i,"is :",i**0.5)"""
+"""WAP to print a square ROOT of every alternate number in a range?"""
+#a = int ( input("ENTER THE FIRST NO OF THE RANGE FOR WHICH YOU WANT A SQUARE ROOT OF AN ALTERNATE NUMBER: "))
+#b = int ( input("ENTER THE SECOND NO OF THE RANGE FOR WHICH YOU WANT A SQUARE ROOT OF AN ALTERNATE NUMBER: "))
+#c = b + 1 
+#for i in range (a , c , 2):
+#  print ("SQUARE OF",i,"is :",i**0.5)
 
 
 

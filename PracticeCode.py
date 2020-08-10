@@ -102,11 +102,32 @@ print ("YOU ARE A RESPONSIBLE CITIZEN OF INDIAN")"""
 
 
 """WAP TO CALCULATE FACTORIAL OF A NUMBER USING WHILE LOOP"""
-a = int ( input ("ENTER THE NO THAT HAS TO BE FACTORIAL :"))
-fact = 1
-term = a
-while a > 0:
-  fact = fact * a
-  a = a - 1
+#a = int ( input ("ENTER THE NO THAT HAS TO BE FACTORIAL :"))
+#fact = 1
+#term = a
+#while a > 0:
+#  fact = fact * a
+#  a = a - 1
 
-print ("THE FACTORIAL OF",term,"IS :",fact )
+#print ("THE FACTORIAL OF",term,"IS :",fact )
+
+
+
+
+"""WAP TO CALCULATE THE TOTAL AMOUNT PAYABLE BY THE COSTOMER ON PURCHASE ON ANY ITEM ON GST LEVIED ON IT. 
+ DEVELOP A USER - FRIENDLY APPROACH FOR THE PROGRAM USING WHILE LOOP"""
+
+a = 'bill'
+
+tap = 0
+
+while a == 'bill' or a == 'BILL' or a == 'Bill':
+  ta = int ( input ("ENTER THE TOTAL AMOUNT OF THE ITEM :"))
+  gst = int (input ("ENTER THE GST ON THE ITEM :"))
+  tap = ta + ( (ta * gst) / 100)
+  print ("THE AMOUNT TO BE PAY AFTER THE GST IS",tap) 
+  a = input("Enter 'BILL' IF more item to be calculate OR Else press any key :")
+
+print ("THANKS   FOR   USING")  
+
+  

@@ -86,13 +86,27 @@ print ("YOU ARE A RESPONSIBLE CITIZEN OF INDIAN")"""
 
 
 """WAP TO CALCULATE THE PRODUCTS OF TWO INPUTTED INTEGERS WITHOUT USING * OPERATOR; INSTEAD USING REPEATED ADDITION?"""
-a = int ( input ("Enter first no :"))
-b = int ( input ( "Enter the second no :"))
-p = 0
-c = a
+#a = int ( input ("Enter first no :"))
+#b = int ( input ( "Enter the second no :"))
+#p = 0
+#c = a
 
-while c > 0:
-    c = c - 1
-    p = p + b
+#while c > 0:
+#    c = c - 1
+#    p = p + b
 
-print ("Product Of Two No",a,"and",b,"is:",p )    
+#print ("Product Of Two No",a,"and",b,"is:",p )    
+
+
+
+
+
+"""WAP TO CALCULATE FACTORIAL OF A NUMBER USING WHILE LOOP"""
+a = int ( input ("ENTER THE NO THAT HAS TO BE FACTORIAL :"))
+fact = 1
+term = a
+while a > 0:
+  fact = fact * a
+  a = a - 1
+
+print ("THE FACTORIAL OF",term,"IS :",fact )

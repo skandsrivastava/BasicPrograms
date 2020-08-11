@@ -146,12 +146,53 @@ print ("YOU ARE A RESPONSIBLE CITIZEN OF INDIAN")"""
 
 "WAP TO ACCEPT NO FROM THE USER AND CLACULATE THE SUM OF ALL THE NO BETWEEN ALL NO FROM 1 TO THE GIVEN NO ?"
 
-a = int ( input ("ENTER THE NO OF YOUR CHOICE WHICH YOU WANT TO HAVE A SUM :"))
-b = a + 1
-c = 0
-for i in range ( 1 , b , 1):
-  c = c + i
-print ("sum is :",c)  
+#a = int ( input ("ENTER THE NO OF YOUR CHOICE WHICH YOU WANT TO HAVE A SUM :"))
+#b = a + 1
+#c = 0
+#for i in range ( 1 , b , 1):
+#  c = c + i
+#print ("sum is :",c)  
+
+
+
+
+
+
+"WAP TO PRINT THE PATTERN"
+b = int (input ( "ENTER EITHER 1 OR 2 OF YOUR OWN CHOICE TO SEE THE MAGIC : "))
+print ("NICE CHOICE ONE STEP AWAY FROM MAGIC")
+a = int ( input ( "ENTER THE NO OF ROWS YOU WANTED TO PRINT TO GET A MAGIC : ")) 
+if b == 1:
+ for i in range ( 0 , a ):
+  for j in range ( 0 , a - i - 1 ):
+    print (end = " ")
+  for j in range ( 0 , i + 1 ):
+    print ( "*", end = " ")
+  print () 
+elif b == 2 :
+ for i in range (1 , a + 1):
+  for j in range (1 , i + 1):
+    print (j , end=" " )
+  print ( )
+else:
+  for i in range (6):
+    for j in range ( 7 ):
+      if (i == 0 and j %3!= 0) or (i == 1 and j %3 == 0) or (i - j == 2) or (i + j == 8):
+        print ( "*" , end= " ")
+      else:
+        print (end = " " )  
+    print ( )
+  print ("NEXT TIME ATTEMP THE RIGHT CHOICE BETWEEN 1 AND 2")  
+print ("HOPE YOU LIKE THE MAGIC")  
+
+
+"""for row in range (6):
+    for col in range ( 7 ):
+      if (row == 0 and col %3!= 0) or (row == 1 and col %3 == 0) or (row - col == 2) or (row + col == 8):
+        print ( "*" , end= " ")
+      else:
+        print (end = " " )  
+    print ( )"""    
 
 
 

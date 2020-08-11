@@ -133,4 +133,21 @@ print ("YOU ARE A RESPONSIBLE CITIZEN OF INDIAN")"""
 
 
 
+"WAP TO PRINT NATURAL NO USING WHILE LOOP"
+
+a = 0 
+b = int (input ("ENTER THE LAST DIGIT OF THE NATURAL NO :"))
+
+
+while a <= b:
+  print ("THE NATURAL NO ARE : ",a)
+  a += 1  
+
+
+
+
+
+
+
+
 ######## STRINGS ..................................

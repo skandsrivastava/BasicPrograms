@@ -135,13 +135,25 @@ print ("YOU ARE A RESPONSIBLE CITIZEN OF INDIAN")"""
 
 "WAP TO PRINT NATURAL NO USING WHILE LOOP"
 
-a = 0 
-b = int (input ("ENTER THE LAST DIGIT OF THE NATURAL NO :"))
+#a = 0 
+#b = int (input ("ENTER THE LAST DIGIT OF THE NATURAL NO :"))
 
 
-while a <= b:
-  print ("THE NATURAL NO ARE : ",a)
-  a += 1  
+#while a <= b:
+#  print ("THE NATURAL NO ARE : ",a)
+#  a += 1  
+
+
+"WAP TO ACCEPT NO FROM THE USER AND CLACULATE THE SUM OF ALL THE NO BETWEEN ALL NO FROM 1 TO THE GIVEN NO ?"
+
+a = int ( input ("ENTER THE NO OF YOUR CHOICE WHICH YOU WANT TO HAVE A SUM :"))
+b = a + 1
+c = 0
+for i in range ( 1 , b , 1):
+  c = c + i
+print ("sum is :",c)  
+
+
 
 
 

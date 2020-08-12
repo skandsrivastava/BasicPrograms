@@ -159,36 +159,31 @@
 
 
 "WAP TO PRINT THE PATTERN"
-b = int (input ( "ENTER EITHER 1 OR 2 OF YOUR OWN CHOICE TO SEE THE MAGIC : "))
-print ("NICE CHOICE ONE STEP AWAY FROM MAGIC")
-a = int ( input ( "ENTER THE NO OF ROWS YOU WANTED TO PRINT TO GET A MAGIC : ")) 
-if b == 1:
- for i in range ( 0 , a ):
-  for j in range ( 0 , a - i - 1 ):
-    print (end = " ")
-  for j in range ( 0 , i + 1 ):
-    print ( "*", end = " ")
-  print () 
-elif b == 2 :
- for i in range (1 , a + 1):
-  for j in range (1 , i + 1):
-    print (j , end=" " )
-  print ( )
-else:
-  for i in range (6):
-    for j in range ( 7 ):
-      if (i == 0 and j %3!= 0) or (i == 1 and j %3 == 0) or (i - j == 2) or (i + j == 8):
-        print ( "*" , end= " ")
-      else:
-        print (end = " " )  
-    print ( )
-  print ("NEXT TIME ATTEMP THE RIGHT CHOICE BETWEEN 1 AND 2")  
-print ("HOPE YOU LIKE THE MAGIC") 
-
-    
-
-
-
+#b = int (input ( "ENTER EITHER 1 OR 2 OF YOUR OWN CHOICE TO SEE THE MAGIC : "))
+#print ("NICE CHOICE ONE STEP AWAY FROM MAGIC")
+#a = int ( input ( "ENTER THE NO OF ROWS YOU WANTED TO PRINT TO GET A MAGIC : ")) 
+#if b == 1:
+# for i in range ( 0 , a ):
+#  for j in range ( 0 , a - i - 1 ):
+#    print (end = " ")
+#  for j in range ( 0 , i + 1 ):
+#    print ( "*", end = " ")
+#  print () 
+#elif b == 2 :
+# for i in range (1 , a + 1):
+#  for j in range (1 , i + 1):
+#    print (j , end=" " )
+#  print ( )
+#else:
+#  for i in range (6):
+#    for j in range ( 7 ):
+#      if (i == 0 and j %3!= 0) or (i == 1 and j %3 == 0) or (i - j == 2) or (i + j == 8):
+#        print ( "*" , end= " ")
+#      else:
+#        print (end = " " )  
+#    print ( )
+#  print ("NEXT TIME ATTEMP THE RIGHT CHOICE BETWEEN 1 AND 2")  
+#print ("HOPE YOU LIKE THE MAGIC") 
 
 
 
@@ -197,3 +192,16 @@ print ("HOPE YOU LIKE THE MAGIC")
 
 
 ######## STRINGS ..................................
+s = input ("WRITE THE SENTENCE OR  WORD THAT YOU WANT TO COUNT THE NUMBER OF LETTER PRESENT IN THE SENTENCE OR WORD :")
+u = 0
+l = 0
+c = 0
+while c < len ( s ):
+  if s[ c ].islower( ) == True:
+    l += 1
+  if s[ c ].isupper( ) == True:
+    u += 1
+  c += 1
+print ("THE UPPER CASE LETTER ARE :" ,u)
+print ("THE LOWER CASE LETER ARE :" , l)
+print ("THE TOTAL LETTER IN THE SENTENCE OR WORD IS :",l + u)

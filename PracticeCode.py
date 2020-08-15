@@ -192,16 +192,45 @@
 
 
 ######## STRINGS ..................................
-s = input ("WRITE THE SENTENCE OR  WORD THAT YOU WANT TO COUNT THE NUMBER OF LETTER PRESENT IN THE SENTENCE OR WORD :")
-u = 0
-l = 0
-c = 0
-while c < len ( s ):
-  if s[ c ].islower( ) == True:
-    l += 1
-  if s[ c ].isupper( ) == True:
-    u += 1
-  c += 1
-print ("THE UPPER CASE LETTER ARE :" ,u)
-print ("THE LOWER CASE LETER ARE :" , l)
-print ("THE TOTAL LETTER IN THE SENTENCE OR WORD IS :",l + u)
+"WAP TO FIND THE MAXIMUM AND MINIMUM AND THE TOTAL VALUE OF THE SENTENCE OR  WORD ?"
+# s = input ("WRITE THE SENTENCE OR  WORD THAT YOU WANT TO COUNT THE NUMBER OF LETTER PRESENT IN THE SENTENCE OR WORD :")
+#u = 0
+#l = 0
+#c = 0
+#while c < len ( s ):
+#  if s[ c ].islower( ) == True:
+#    l += 1
+#  if s[ c ].isupper( ) == True:
+#    u += 1
+#  c += 1
+#print ("THE UPPER CASE LETTER ARE :" ,u)
+#print ("THE LOWER CASE LETER ARE :" , l)
+#print ("THE TOTAL LETTER IN THE SENTENCE OR WORD IS :",l + u)
+
+
+
+"PRACTISE PROGRAM"
+#b = [1 , 2 , 3]
+#type (b)
+#c = tuple (b)
+#print (b)
+
+
+
+
+"WAP TO FIND THE MAXIMUM , MINIMUM AND MEAN VALUE FROM THE LIST?"
+a = []
+n = int ( input ("ENTER THE NO OF ELEMENT PRESENT IN THE LIST : "))
+i = 0
+while i < n:
+  x = int ( input ("ENTER THE ELEMENT : "))
+  a.append(x)
+  i = i + 1
+print ("THE LIST YOU HAVE ENTER IS :", a )
+m = max ( a )
+l = min ( a )
+mean = sum ( a ) / len ( a )
+print ("MAXIMUM VALUE IS : ",m)
+print ("MINIMUM VALUE IS : ",l)
+print ("MEAN VALUE IS : ",mean)
+

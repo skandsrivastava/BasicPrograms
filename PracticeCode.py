@@ -11,33 +11,33 @@
 
 #############################
 
-#A= int ( input("Enter The Basic Salary :"))
-#B= int ( input( "Enter The Amount Of Saving Done During The Month :"))
+"""A= int ( input("Enter The Basic Salary :"))
+B= int ( input( "Enter The Amount Of Saving Done During The Month :"))
 
-#if A <= 50000:
- # TT =0
+if A <= 50000:
+  TT =0
 
-#elif A <= 80000:
-#  if B <= 50000:
-#    TS = A - B
-#    TT = TS * 0.05
+elif A <= 80000:
+  if B <= 50000:
+    TS = A - B
+    TT = TS * 0.05
 
-#elif A <= 100000:
-#  if B <= 70000:
-#    TS = A - B
-#    TT = TS * 0.10
+elif A <= 100000:
+  if B <= 70000:
+    TS = A - B
+    TT = TS * 0.10
 
-#else:
+else:
 
-#  if B <= 100000:
-#    TS = A - B
-#    TT = TS * 0.19
+  if B <= 100000:
+    TS = A - B
+    TT = TS * 0.19
 
-#print ("THE AMOUNT LEFT AFTER SAVING IS :",TS) 
-#print ("THE TAX YOU HAVE TO PAY AT LAST IS :",TT)
-#print ("$")
-#print ("$")
-#print ("YOU ARE A RESPONSIBLE CITIZEN OF INDIAN")
+print ("THE AMOUNT LEFT AFTER SAVING IS :",TS) 
+print ("THE TAX YOU HAVE TO PAY AT LAST IS :",TT)
+print ("$")
+print ("$")
+print ("YOU ARE A RESPONSIBLE CITIZEN OF INDIAN")"""
 
 #################################
 
@@ -219,18 +219,89 @@
 
 
 "WAP TO FIND THE MAXIMUM , MINIMUM AND MEAN VALUE FROM THE LIST?"
-a = []
-n = int ( input ("ENTER THE NO OF ELEMENT PRESENT IN THE LIST : "))
-i = 0
-while i < n:
-  x = int ( input ("ENTER THE ELEMENT : "))
-  a.append(x)
-  i = i + 1
-print ("THE LIST YOU HAVE ENTER IS :", a )
-m = max ( a )
-l = min ( a )
-mean = sum ( a ) / len ( a )
-print ("MAXIMUM VALUE IS : ",m)
-print ("MINIMUM VALUE IS : ",l)
-print ("MEAN VALUE IS : ",mean)
+#a = []
+#n = int ( input ("ENTER THE NO OF ELEMENT PRESENT IN THE LIST : "))
+#i = 0
+#while i < n:
+#  x = int ( input ("ENTER THE ELEMENT : "))
+#  a.append(x)
+#  i = i + 1
+#print ("THE LIST YOU HAVE ENTER IS :", a )
+#m = max ( a )
+#l = min ( a )
+#mean = sum ( a ) / len ( a )
+#print ("MINIMUM VALUE IS : ",l)
+#print ("MEAN VALUE IS : ",mean)
 
+
+
+
+"BEST EVER PROGRAM MADE-------"
+import pyttsx3
+import speech_recognition as sr
+import datetime
+import wikipedia
+import webbrowser
+import os
+import smtplib 
+
+print ("HELLO I AM JARVIS FOR YOUR HELLP........")
+
+MASTER = "Skand"
+engine = pyttsx3.init('sapi5')
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[0].id)
+
+def speak(text):
+  engine.say(text)
+  engine.runAndWait( )
+
+
+def wishMe():
+  hour = int(datetime.datetime.now().hour)
+  print(hour)
+  if hour>=0 and hour<12:
+    speak("GOOD MORNING" + MASTER)
+  elif hour>=12 and hour<18 :
+    speak("GOOD AFTERNOON" + MASTER)
+  else:
+    speak("GOOD EVENING" + MASTER)
+    
+  speak("I AM JARVIS, YOU MUST LISTEN ME IN IRONMAN MOVIE. HOW MAY I HELP YOU?")    
+
+def takecommand():
+  r = sr.Recognizer()
+  with sr.Microphone() as source:
+    print("Listening...")
+    audio = r.listen(source)
+
+  try :
+    print("Recognizing....")
+    query = r.recognize_google(audio, language= 'en-in')
+    print(f"user said: {query}\n " )
+
+  except Exception as e:
+    print("Say That Again Please") 
+    query = None
+  return query  
+
+
+speak("Initializing Jarvis........")         
+wishMe()
+query = takecommand()
+
+if 'wikipedia' in query.lower():
+  speak('Searching wikipedia....')
+  query = query.replace("wikipedia","")
+  results = wikipedia.summary(query,sentences = 2) 
+  speak(results)    
+
+elif ' open youtube'in query.lower():
+  webbrowser.open("youtube.com")
+
+elif 'open google' in query.lower():
+  webbrowser.open("google.com")
+
+
+
+  

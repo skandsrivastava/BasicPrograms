@@ -259,7 +259,7 @@ def speak(text):
 
 def wishMe():
   hour = int(datetime.datetime.now().hour)
-  print(hour)
+  
   if hour>=0 and hour<12:
     speak("GOOD MORNING" + MASTER)
   elif hour>=12 and hour<18 :
@@ -296,11 +296,19 @@ if 'wikipedia' in query.lower():
   results = wikipedia.summary(query,sentences = 2) 
   speak(results)    
 
-elif ' open youtube'in query.lower():
+elif ' open youtube' in query.lower():
   webbrowser.open("youtube.com")
 
 elif 'open google' in query.lower():
   webbrowser.open("google.com")
+
+elif 'time' in query.lower():
+  strTime = datetime.datetime.now( ).strftime("%H : %M : %S")
+  speak(f"{MASTER} the time is...{strTime}")
+
+elif 'quit' in query.lower():
+  speak('HOPE, you love to play with me..... I too enjoy ,with you be happy...... Bye') 
+  exit 
 
 
 

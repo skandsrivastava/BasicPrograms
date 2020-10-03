@@ -245,7 +245,7 @@ import webbrowser
 import os
 import smtplib 
 
-print ("HELLO I AM JARVIS FOR YOUR HELLP........")
+print ("HELLO I AM Rick FOR YOUR HELLP........")
 
 MASTER = "Skand"
 engine = pyttsx3.init('sapi5')
@@ -267,7 +267,7 @@ def wishMe():
   else:
     speak("GOOD EVENING" + MASTER)
     
-  speak("I AM JARVIS, YOU MUST LISTEN ME IN IRONMAN MOVIE. HOW MAY I HELP YOU?")    
+  speak("I AM Rick, HOW MAY I HELP YOU?")    
 
 def takecommand():
   r = sr.Recognizer()

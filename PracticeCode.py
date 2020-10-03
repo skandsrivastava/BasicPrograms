@@ -286,7 +286,7 @@ def takecommand():
   return query  
 
 
-speak("Initializing Jarvis........")         
+speak("Initializing Rick........")         
 wishMe()
 query = takecommand()
 
